@@ -1,4 +1,6 @@
-FROM magm3333/ubuntu18.04-jdk:8
+
+ARG JDK_VER
+FROM magm3333/ubuntu18.04-jdk:$JDK_VER
 MAINTAINER Mariano Alberto García Mattío
 ARG VER_P
 ARG VER_S
