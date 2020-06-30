@@ -36,6 +36,7 @@ Estableciendo valores de configuración customizados (*setenv.sh*):
 ```
 docker run -it -p 8080:8080 --name tomcat /path/a/tu//setenv.sh:/opt/tomcat/bin/setenv.sh -v /path/a/tu/webapps:/opt/tomcat/webapps magm3333/tomcat:9.0.36
 ```
+---
 
 **Licencia**
 
