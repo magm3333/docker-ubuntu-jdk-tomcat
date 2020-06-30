@@ -1,4 +1,4 @@
-# docker-ubuntu-jdk-tomcat
+# Dockerfiles para crear imágenes de JDK y Apache Tomcat
 
 **Crear Imagenes de Java**
 Una vez clonado este repositorio deberá:
