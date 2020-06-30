@@ -15,7 +15,10 @@ docker build -t jdk8 .
 Para ello existen dos scipts:
 - ```tomcat/build8.sh```
 - ```tomcat/build9.sh```
+
 Ambos scripts se basan en las imageges: *magm3333/ubuntu18.04-jdk:8* y *magm3333/ubuntu18.04-jdk:11* respectivamente
+> Los scripts anteriores poseen variables de entorno que pueden ser modificadas a fin de crear imágenes de sub versiones específicas de tomcat 8 y 9, estas variables son: *VERSION_P* y *VERSION_S*
+
 
 **Crear contenedores**
 
