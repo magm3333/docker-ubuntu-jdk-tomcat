@@ -1,8 +1,10 @@
 FROM magm3333/ubuntu18.04-jdk:8
 MAINTAINER Mariano Alberto García Mattío
+ARG VER_P
+ARG VER_S
 
-ENV VERSION_P 8
-ENV VERSION_S 5.56
+ENV VERSION_P $VER_P
+ENV VERSION_S $VER_S
 ENV URL_DOWNLOAD_TOMCAT https://apache.dattatec.com/tomcat/tomcat-${VERSION_P}/v${VERSION_P}.${VERSION_S}/bin/apache-tomcat-${VERSION_P}.${VERSION_S}.tar.gz
 
 RUN apt update
@@ -17,6 +19,7 @@ RUN sed -i -e 's/\(exec ".*"\) start/\1 run/' /opt/tomcat/bin/startup.sh
 
 RUN rm /opt/tomcat.tar.gz
 
+VOLUME /opt/tomcat/bin/setenv.sh
 
 EXPOSE 8080
 
