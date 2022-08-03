@@ -1,8 +1,9 @@
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 MAINTAINER Mariano Alberto García Mattío
 
 RUN apt update
-RUN apt install wget unzip -y
+RUN apt install curl tzdata wget unzip -y
+ENV TZ="America/Argentina/Buenos_Aires"
 WORKDIR /tmp
 COPY install-java.sh .
 COPY jdk-linux-x64.tar.gz .
